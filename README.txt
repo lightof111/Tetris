@@ -1,0 +1,1 @@
+Tetris program with motion control capabilities. Tetris and game logic is in python, while motion control is in arduino. 
