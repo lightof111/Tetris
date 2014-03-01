@@ -18,35 +18,7 @@ def timerFired():
     
     canvas.after(delay, timerFired) 
     redrawAll(canvas)
-##
-##def removeFullRows():
-##    rows = canvas.data.rows
-##    cols = canvas.data.cols    
-##    oldRows = canvas.data.rows    
-##    newRow = canvas.data.rows-1
-##    fullRows = 0
-##    unfinished = 0
-##    cols = canvas.data.cols
-##    copy = canvas.data.board
-##    for x in xrange(oldRows-1, -1,-1):
-##        y = 0        
-##        while (y < cols and newRow >=0):
-##            if (canvas.data.board[x][y] == "gray39"):
-##                copy[newRow] = canvas.data.board[x]
-##                newRow = newRow -1
-##                unfinished +=1
-##                break
-##            if (y == cols - 1):
-##                fullRows +=1                         
-##            y = y+1
-##           
-##    canvas.data.score += (fullRows **2) * 1000
-##    canvas.data.board = copy
-##    for x in xrange(rows):
-##        for y in xrange(cols):
-##            drawCell(x,y,canvas,canvas.data.board[x][y])
-##    canvas.data.fullRows += fullRows
-##    redrawAll(canvas)
+
 
 def removeFullRows():
     rows = canvas.data.rows
